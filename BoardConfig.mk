@@ -36,3 +36,5 @@ TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
 
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
+
+BUILD_BROKEN_DUP_RULES := true
