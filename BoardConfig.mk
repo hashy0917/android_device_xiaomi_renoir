@@ -36,3 +36,5 @@ SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
+
+BUILD_BROKEN_DUP_RULES := true
