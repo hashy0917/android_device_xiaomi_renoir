@@ -12,6 +12,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := renoir
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/renoir_QGKI.config
 
@@ -33,3 +36,5 @@ SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
+
+BUILD_BROKEN_DUP_RULES := true
